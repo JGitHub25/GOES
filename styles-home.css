@@ -1,0 +1,564 @@
+/* Debugger */
+html {
+  --outline: 1px dotted rgba(255, 0, 0, 0.5);
+  --outline: 0px;
+}
+* {
+  outline: var(--outline);
+}
+
+/* =========================================================== HOME */
+body {
+  background-color: #f0ebe1;
+}
+
+h1 {
+  font-family: Monoton;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.container {
+  width: 70%;
+}
+
+.nombre {
+  font-size: 8vw;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.apellido {
+  font-size: 10vw;
+  letter-spacing: 0.6em;
+  margin-left: 4.5vw;
+  text-align: center;
+}
+
+.img1 {
+  height: 60vh;
+  margin-top: 2vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =====SIDEBAR */
+.hamburguesa {
+  background-color: #f0ebe1;
+  font-size: 2.5vw;
+  position: relative;
+  left: 71vw;
+  top: 10vh;
+}
+
+.hamburguesa:hover {
+  color: #5a5a5a;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #f0ebe1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10vh;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/*Mostrar el menu*/
+.sidenav-show {
+  width: 16vw;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2vw;
+  text-decoration: none;
+  color: black;
+
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #5a5a5a;
+}
+
+/* Sticky navbar */
+#navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: #f08e2a; /*#F77D2C*/ /*#df4028*/
+  z-index: 2;
+
+  padding: 15px;
+  background-image: radial-gradient(hsl(0deg 0% 0% / 10%) 20%, transparent 21%);
+  background-size: 14px 14px;
+}
+
+#navbar a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.prueba {
+  clip-path: polygon(12% 0, 100% 0%, 90% 100%, 0% 100%);
+  width: auto;
+  height: auto;
+  background-color: black;
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* SWIPER DE FOTOS */
+.swiper-container {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.section {
+  height: 100vh;
+  padding: 5%;
+}
+
+.subtitle {
+  font-family: "Bebas Neue", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 2.5vw;
+  padding-bottom: 3vh;
+}
+
+.light-subtitle {
+  font-family: "Bebas Neue", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: white;
+  font-size: 2.5vw;
+  padding-bottom: 3vh;
+}
+
+/* =========================================================== ABOUT */
+
+.about {
+  background-color: white;
+}
+
+.about-text-container {
+  display: flex;
+  text-align: justify;
+  gap: 5vw;
+}
+
+.select-lang {
+  display: none;
+}
+
+.select-lang p {
+  font-size: 2vw;
+  font-family: "Archivo Black", sans-serif;
+  color: #625b53;
+}
+
+.about-text {
+  flex-basis: 50%;
+}
+
+.about-text p {
+  font-family: "Arimo", sans-serif;
+  font-size: 1.3vw;
+  line-height: 1.4;
+  padding-bottom: 3%;
+}
+
+.about-text strong {
+  font-weight: bold;
+}
+
+#about-text-container-p {
+  display: none;
+}
+
+/* =========================================================== MÚSICA */
+
+.musica {
+  background-color: black;
+}
+
+.media-container {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reproductor iframe {
+  width: 30vw;
+  height: 65vh;
+}
+
+.novedad {
+  background-color: #f0ebe1;
+  border-radius: 5%;
+  width: 44vw;
+  text-align: center;
+}
+
+/* =====================MÚSICA 2 */
+.musica2 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.videos {
+  width: 60%;
+  margin-top: 20vh;
+}
+
+.cont-video {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin-bottom: 20vh;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================================== FOTOS */
+
+.fotos {
+  background-color: white;
+}
+
+/* =========================================================== TIENDA */
+
+.tienda {
+  background-color: white;
+  height: auto;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Arimo", sans-serif;
+}
+
+.tarjeta {
+  max-width: 16em;
+  display: flex;
+  flex-direction: column;
+  /*Decorativos*/
+  margin: 1em;
+}
+
+.imagen_tarjeta {
+  max-height: 16em;
+  overflow: hidden;
+  /*Decorativos*/
+}
+
+.imagen_tarjeta img {
+  object-fit: cover;
+  display: block;
+}
+
+.contenido_tarjeta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* Opcionales */
+  padding: 1em 1em 0;
+  gap: 0.8em;
+}
+
+.contenido_tarjeta h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* =========================================================== CONTACTO */
+
+.contacto {
+  background-color: black;
+  height: 50vh;
+}
+
+.contact-container {
+  display: flex;
+  height: 69%;
+  align-items: center;
+}
+
+.logo-contact {
+  font-family: Monoton;
+  color: white;
+  font-size: 3vw;
+}
+
+.logo-contact_apellido {
+  letter-spacing: 0.8em;
+  padding-left: 0.6em;
+}
+
+.logo-borde {
+  width: 50%;
+  border-right: solid 0.3vw white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.ruler {
+  background-color: blanchedalmond;
+  width: 5px;
+}
+
+.contact-info {
+  width: 50%;
+  padding-left: 20%;
+}
+
+.titulos-contact {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.contact-info-text {
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2vw;
+  padding-top: 3%;
+  color: white;
+  font-size: 3.5vw;
+}
+
+/* =========================================================== Media queries */
+/*========Landscape*/
+@media only screen and (orientation: landscape) and (max-width: 1380px) {
+  .about-text p {
+    font-size: 1.6vw;
+  }
+
+  .sidenav {
+    padding-top: 13vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1020px) {
+  .about-text p {
+    font-size: 1.4vw;
+  }
+
+  .swiper-slide {
+    width: 150px;
+    height: 150px;
+  }
+
+  .img1 {
+    margin-top: 0;
+  }
+
+  .logo-borde {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .logo-contact {
+    font-size: 16px;
+  }
+  .contact-info-text {
+    font-size: 10px;
+  }
+
+  .contact-info {
+    padding-left: 15%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 750px) {
+  .sidenav {
+    padding-top: 5vh;
+  }
+
+  .sidenav-show {
+    width: 18vw;
+  }
+
+  .sidenav a {
+    font-size: 3vw;
+  }
+}
+
+/*========Portrait*/
+@media only screen and (orientation: portrait) {
+  .sidenav-show {
+    width: 14vw;
+  }
+
+  .sidenav a {
+    font-size: 3vw;
+    padding: 4px 4px 8px 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hamburguesa {
+    font-size: 5vw;
+    left: 90vw;
+    top: -7vh;
+  }
+
+  .nombre {
+    font-size: 14vw;
+  }
+
+  .apellido {
+    font-size: 17vw;
+    margin-left: 7.2vw;
+  }
+
+  .section {
+    height: auto;
+    margin-bottom: -1px;
+  }
+
+  .subtitle,
+  .light-subtitle {
+    font-size: 12.5vw;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .select-lang {
+    display: flex;
+    justify-content: center;
+    padding-left: 60vw;
+    gap: 5vw;
+    padding-bottom: 1.5vh;
+  }
+
+  #about-text-container-p {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-text-container-l {
+    display: none;
+  }
+
+  .about-text {
+    flex-basis: 95%;
+  }
+
+  .about-text p {
+    font-size: 1.5vh;
+  }
+
+  .media-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .reproductor iframe {
+    width: 55vw;
+    height: 30vh;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-height: 1200px) {
+  .home {
+    align-items: center;
+  }
+
+  .img1 {
+    height: 51vh;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-height: 970px) {
+  .sidenav-show {
+    width: 16vw;
+  }
+
+  .sidenav a {
+    font-size: 4vw;
+    padding: 4px 4px 8px 4px;
+  }
+
+  .img1 {
+    height: 40vh;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-height: 820px) {
+  .img1 {
+    height: 38vh;
+  }
+
+  .about-text p {
+    font-size: 1.8vh;
+  }
+
+  .logo-contact {
+    font-size: 16px;
+  }
+  .contact-info-text {
+    font-size: 10px;
+  }
+
+  .contact-info {
+    padding-left: 15%;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-height: 670px) {
+  .img1 {
+    height: 35vh;
+  }
+}
