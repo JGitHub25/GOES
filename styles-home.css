@@ -31,6 +31,7 @@ h1 {
   font-size: 8vw;
   letter-spacing: 0.1em;
   text-align: center;
+  text-shadow: 0.07em 0.07em 0.01em rgb(0 0 0 / 3%);
 }
 
 .apellido {
@@ -38,6 +39,7 @@ h1 {
   letter-spacing: 0.6em;
   margin-left: 4.5vw;
   text-align: center;
+  text-shadow: 0.07em 0.07em 0.01em rgb(0 0 0 / 3%);
 }
 
 .img1 {
@@ -55,10 +57,12 @@ h1 {
   position: relative;
   left: 71vw;
   top: 10vh;
+  box-shadow: 3px 4px 2px rgb(0 0 0 / 10%);
+  border: none;
 }
 
 .hamburguesa:hover {
-  color: #5a5a5a;
+  color: #666666;
 }
 
 .sidenav {
@@ -72,6 +76,7 @@ h1 {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 10vh;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: 50px 205px 70px rgb(0 0 0);
 }
 
 /*Mostrar el menu*/
@@ -92,28 +97,40 @@ h1 {
 }
 
 .sidenav a:hover {
-  color: #5a5a5a;
+  color: #666666;
 }
 
 /* Sticky navbar */
 #navbar {
   display: flex;
+  justify-content: space-evenly;
   overflow: hidden;
   background-color: #f08e2a; /*#F77D2C*/ /*#df4028*/
   z-index: 2;
 
-  padding: 15px;
-  background-image: radial-gradient(hsl(0deg 0% 0% / 10%) 20%, transparent 21%);
-  background-size: 14px 14px;
+  padding: 5px;
+  background-image: radial-gradient(
+    hsl(0deg 0% 0% / 10%) 20%,
+    transparent 21%,
+    #c96d0f
+  );
+  background-size: 5px 5px;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
 }
 
-#navbar a {
+.navbar a {
   display: block;
   color: whitesmoke;
   text-align: center;
   padding: 14px;
   text-decoration: none;
   font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+  text-shadow: 3px 3px 5px rgb(0 0 0 / 70%);
+}
+
+.menuPrueba a {
+  text-shadow: 3px 3px 1px rgb(255 255 255 / 40%);
 }
 
 .sticky {
@@ -122,7 +139,7 @@ h1 {
   width: 100%;
 }
 
-.prueba {
+.menuPrueba {
   clip-path: polygon(12% 0, 100% 0%, 90% 100%, 0% 100%);
   width: auto;
   height: auto;
@@ -158,6 +175,7 @@ html {
     sans-serif;
   font-size: 2.5vw;
   padding-bottom: 3vh;
+  text-shadow: 0.05em 0.05em 0.05em rgb(0 0 0 / 15%);
 }
 
 .light-subtitle {
@@ -166,6 +184,7 @@ html {
   color: white;
   font-size: 2.5vw;
   padding-bottom: 3vh;
+  text-shadow: 0.05em 0.05em 0.05em rgb(255 255 255 / 15%);
 }
 
 /* =========================================================== ABOUT */
@@ -431,6 +450,11 @@ html {
   .sidenav a {
     font-size: 3vw;
   }
+
+  .navbar a {
+    padding: 8px;
+    font-size: 1rem;
+  }
 }
 
 /*========Portrait*/
@@ -511,6 +535,38 @@ html {
   }
 }
 
+.mobile-navigation {
+  display: none;
+}
+
+.mobile-navigation__overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+  z-index: 2;
+  background-color: #f0ebe1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mobile-navigation__overlay a {
+  font-family: "Bebas Neue", cursive;
+  font-size: 15vw;
+  text-decoration: none;
+  color: black;
+
+  padding: 8px 8px 8px 32px;
+
+  transition: 0.3s;
+}
+
 @media only screen and (orientation: portrait) and (max-height: 1200px) {
   .home {
     align-items: center;
@@ -560,5 +616,45 @@ html {
 @media only screen and (orientation: portrait) and (max-height: 670px) {
   .img1 {
     height: 35vh;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 750px) {
+  #navbar {
+    display: none;
+  }
+
+  .mobile-navigation {
+    background-color: #f0ebe1;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+  }
+
+  .logo-mobile {
+    margin-left: 20px;
+  }
+
+  .logo-mobile img {
+    width: 15%;
+  }
+
+  .hamburguesa_mobile {
+    margin-right: 20px;
+
+    background-color: #f0ebe1;
+    font-size: 6vw;
+    border: none;
+  }
+
+  .sticky-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }

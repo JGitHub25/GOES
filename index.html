@@ -33,9 +33,10 @@
       href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/Favicon.png" type="image/gif" sizes="16x16" />
   </head>
 
-  <body>
+  <body id="body">
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
       <a class="nav" href="#home">inicio</a>
@@ -60,9 +61,9 @@
       </div>
     </main>
     <!-- Sticky navbar -->
-    <!-- Descomentar estos elementos y el JS si se quiere usar -->
-    <div id="navbar">
-      <div class="prueba"><a href="#home">inicio</a></div>
+    
+    <div id="navbar" class="navbar">
+      <div class="menuPrueba"><a href="#home">inicio</a></div>
       <a href="#about">about</a>
       <a href="#musica">música</a>
       <a href="#musica2">videos</a>
@@ -70,7 +71,26 @@
       <a href="#tienda">tienda</a>
       <a href="#contacto">contacto</a>
     </div>
-
+<!-- Navbar mobile -->
+    <div id="mobile-navigation" class="mobile-navigation">
+      <div class="logo-mobile">
+        <a href="#home"><img src="images/Icon 2.png" alt="Logo" class="logo" /></a>
+      </div>
+      <button id="hamburguesa_mobile" class="hamburguesa_mobile">
+          <i class="fas fa-bars"></i>
+      </button>
+      </div>
+    </div>
+    <div id="mobile-navigation__overlay" class="mobile-navigation__overlay">
+      <a href="javascript:void(0)" id="closebtn-mob" class="closebtn-mob">&times;</a>
+      <a href="#home">inicio</a>
+      <a href="#about">about</a>
+      <a href="#musica">música</a>
+      <a href="#musica2">videos</a>
+      <a href="#fotos">fotos</a>
+      <a href="#tienda">tienda</a>
+      <a href="#contacto">contacto</a>
+    </div>
     <!-- ABOUT ===================================================================== -->
     <div id="about" class="section about">
       <h2 class="subtitle">About</h2>
